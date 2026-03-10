@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>RetailPulse 360 — Power BI Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0d0d14;--s1:#141420;--s2:#1a1a2e;--acc:#00e5a0;--acc2:#5b8fff;--acc3:#ff6b6b;--acc4:#ffd166;--acc5:#c77dff;--tx:#dde1ec;--mt:#7a7a99;--bd:rgba(255,255,255,0.07)}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',sans-serif;line-height:1.7;font-size:14px}
+h1{font-family:'Syne',sans-serif;font-size:2.4rem;font-weight:800;color:var(--acc);letter-spacing:-0.02em}
+h2{font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:700;color:var(--tx);margin:2.5rem 0 1rem;letter-spacing:-0.01em}
+h3{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--acc2);margin:1.5rem 0 0.5rem}
+.hero{background:linear-gradient(135deg,#0d0d14 0%,#1a1a35 100%);padding:3rem 4rem;border-bottom:1px solid var(--bd)}
+.hero p{color:var(--mt);max-width:700px;margin-top:0.75rem;font-size:0.9rem}
+.badges{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1rem}
+.badge{font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.15em;padding:0.3rem 0.8rem;border-radius:2px;text-transform:uppercase;border:1px solid}
+.b-g{color:var(--acc);border-color:rgba(0,229,160,0.3);background:rgba(0,229,160,0.07)}
+.b-b{color:var(--acc2);border-color:rgba(91,143,255,0.3);background:rgba(91,143,255,0.07)}
+.b-r{color:var(--acc3);border-color:rgba(255,107,107,0.3);background:rgba(255,107,107,0.07)}
+.b-y{color:var(--acc4);border-color:rgba(255,209,102,0.3);background:rgba(255,209,102,0.07)}
+.b-p{color:var(--acc5);border-color:rgba(199,125,255,0.3);background:rgba(199,125,255,0.07)}
+main{max-width:1100px;margin:0 auto;padding:3rem 4rem}
+.section{margin-bottom:3rem}
+.card{background:var(--s1);border:1px solid var(--bd);border-radius:4px;padding:1.5rem;margin-bottom:1rem}
+.card:hover{border-color:rgba(0,229,160,0.2)}
+.card h3{margin-top:0}
+.card p,.card li{font-size:0.875rem;color:var(--mt);line-height:1.75}
+.card ul{padding-left:1.2rem}
+.card li{margin-bottom:0.3rem}
+.step-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.step{background:var(--s2);border:1px solid var(--bd);border-radius:4px;padding:1.25rem 1.5rem;position:relative;padding-left:3.5rem}
+.step-num{position:absolute;left:1rem;top:1.25rem;font-family:'DM Mono',monospace;font-size:1.2rem;font-weight:500;color:var(--acc);opacity:0.4}
+.step h4{font-family:'Syne',sans-serif;font-size:0.9rem;font-weight:700;color:var(--tx);margin-bottom:0.4rem}
+.step p{font-size:0.82rem;color:var(--mt);line-height:1.7}
+code{font-family:'DM Mono',monospace;font-size:0.82rem;background:rgba(0,229,160,0.08);color:var(--acc);padding:0.1rem 0.4rem;border-radius:2px;border:1px solid rgba(0,229,160,0.15)}
+pre{background:var(--s2);border:1px solid var(--bd);border-radius:4px;padding:1.25rem;overflow-x:auto;font-family:'DM Mono',monospace;font-size:0.8rem;color:#a8d8b9;line-height:1.8;margin:0.75rem 0}
+.page-card{background:var(--s1);border:1px solid var(--bd);border-radius:4px;padding:1.5rem;margin-bottom:0.75rem;display:flex;gap:1.5rem;align-items:flex-start}
+.page-icon{font-size:2rem;flex-shrink:0;width:48px;text-align:center}
+.page-info h4{font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;margin-bottom:0.3rem}
+.page-info p{font-size:0.83rem;color:var(--mt);margin-bottom:0.5rem}
+.page-tags{display:flex;flex-wrap:wrap;gap:0.3rem}
+.ptag{font-family:'DM Mono',monospace;font-size:0.58rem;padding:0.2rem 0.5rem;border-radius:2px;border:1px solid var(--bd);color:var(--mt);background:var(--s2)}
+.dax-block{background:var(--s2);border-left:3px solid var(--acc2);padding:1rem 1.25rem;margin:0.75rem 0;border-radius:0 4px 4px 0}
+.dax-block .dax-name{font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--acc4);letter-spacing:0.1em;margin-bottom:0.3rem}
+.dax-block pre{background:transparent;border:none;padding:0;margin:0;color:#b8c8ff}
+.ai-card{background:var(--s2);border:1px solid rgba(199,125,255,0.15);border-radius:4px;padding:1.25rem;margin-bottom:0.75rem}
+.ai-card h4{color:var(--acc5);font-family:'Syne',sans-serif;font-weight:700;font-size:0.9rem;margin-bottom:0.4rem}
+.ai-card p{font-size:0.82rem;color:var(--mt);line-height:1.7}
+.tip{background:rgba(0,229,160,0.05);border:1px solid rgba(0,229,160,0.2);border-radius:4px;padding:0.9rem 1.1rem;margin:1rem 0;font-size:0.83rem;color:var(--tx)}
+.tip::before{content:"💡 TIP: ";font-weight:700;color:var(--acc)}
+.warn{background:rgba(255,107,107,0.05);border:1px solid rgba(255,107,107,0.2);border-radius:4px;padding:0.9rem 1.1rem;margin:1rem 0;font-size:0.83rem;color:var(--tx)}
+.warn::before{content:"⚠️ NOTE: ";font-weight:700;color:var(--acc3)}
+@media(max-width:800px){main,h1~p{padding:2rem 1.5rem}.hero{padding:2rem 1.5rem}.step-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>Power BI Implementation Guide</h1>
+  <p>Complete step-by-step instructions for building the RetailPulse 360 executive dashboard — including data connections, DAX measures, all 5 report pages, and AI visual integration.</p>
+  <div class="badges">
+    <span class="badge b-y">Power BI Desktop</span>
+    <span class="badge b-b">DirectQuery / Import</span>
+    <span class="badge b-g">DAX Measures</span>
+    <span class="badge b-r">AI Visuals</span>
+    <span class="badge b-p">Row-Level Security</span>
+  </div>
+</div>
+
+<main>
+
+<!-- SETUP -->
+<div class="section">
+<h2>⚙️ Step 1 — Project Setup & Data Connections</h2>
+<div class="step-grid">
+  <div class="step"><div class="step-num">01</div><h4>Connect to PostgreSQL</h4><p>Open Power BI Desktop → Get Data → PostgreSQL. Enter server address, database name <code>retailpulse360</code>. Import mode for data under 1GB, DirectQuery for live refresh.</p></div>
+  <div class="step"><div class="step-num">02</div><h4>Import CSV Outputs</h4><p>Also import Python-generated CSVs: <code>rfm_scores.csv</code> and <code>churn_scores.csv</code> from the data folder. These contain ML model outputs.</p></div>
+  <div class="step"><div class="step-num">03</div><h4>Build the Data Model</h4><p>In Model view, connect: <code>fact_transactions</code> → <code>dim_stores</code>, <code>dim_products</code>, <code>dim_customers</code>, <code>dim_date</code>. Star schema — all relationships Many-to-One.</p></div>
+  <div class="step"><div class="step-num">04</div><h4>Link ML Outputs</h4><p>Join <code>rfm_scores</code> to <code>dim_customers</code> on <code>customer_id</code>. Join <code>churn_scores</code> to <code>dim_customers</code> on <code>customer_id</code>.</p></div>
+</div>
+<div class="tip">Set the <code>dim_date</code> table as your date table (right-click → Mark as Date Table). This enables Power BI's time intelligence functions like SAMEPERIODLASTYEAR.</div>
+</div>
+
+<!-- DAX MEASURES -->
+<div class="section">
+<h2>📐 Step 2 — Core DAX Measures</h2>
+<p style="color:var(--mt);margin-bottom:1rem;font-size:0.875rem">Create a dedicated <strong>_Measures</strong> table (blank query) and store all measures there. Never put measures in fact tables.</p>
+
+<div class="dax-block">
+  <div class="dax-name">MEASURE — Total Revenue</div>
+  <pre>Total Revenue = SUM(fact_transactions[total_revenue])</pre>
+</div>
+<div class="dax-block">
+  <div class="dax-name">MEASURE — Gross Profit Margin %</div>
+  <pre>GP Margin % = 
+DIVIDE(
+    SUM(fact_transactions[gross_profit]),
+    SUM(fact_transactions[total_revenue]),
+    0
+)</pre>
+</div>
+<div class="dax-block">
+  <div class="dax-name">MEASURE — Year-over-Year Growth</div>
+  <pre>YoY Revenue Growth = 
+VAR CurrentYear = [Total Revenue]
+VAR PrevYear = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR(dim_date[date_id]))
+RETURN
+DIVIDE(CurrentYear - PrevYear, PrevYear, 0)</pre>
+</div>
+<div class="dax-block">
+  <div class="dax-name">MEASURE — Rolling 3-Month Average</div>
+  <pre>Rolling 3M Revenue = 
+CALCULATE(
+    [Total Revenue],
+    DATESINPERIOD(dim_date[date_id], LASTDATE(dim_date[date_id]), -3, MONTH)
+)</pre>
+</div>
+<div class="dax-block">
+  <div class="dax-name">MEASURE — Churn Risk Customer Count</div>
+  <pre>High Risk Customers = 
+CALCULATE(
+    DISTINCTCOUNT(churn_scores[customer_id]),
+    churn_scores[churn_risk_label] = "High Risk"
+)</pre>
+</div>
+<div class="dax-block">
+  <div class="dax-name">MEASURE — Average Order Value</div>
+  <pre>Avg Order Value = 
+DIVIDE(
+    [Total Revenue],
+    DISTINCTCOUNT(fact_transactions[transaction_id]),
+    0
+)</pre>
+</div>
+<div class="dax-block">
+  <div class="dax-name">MEASURE — Revenue Target (Dynamic)</div>
+  <pre>Revenue vs Target = 
+VAR Target = [Total Revenue] * 1.10  -- 10% growth target
+RETURN
+DIVIDE([Total Revenue], Target, 0)</pre>
+</div>
+</div>
+
+<!-- 5 REPORT PAGES -->
+<div class="section">
+<h2>📄 Step 3 — The 5 Report Pages</h2>
+
+<div class="page-card">
+  <div class="page-icon">📊</div>
+  <div class="page-info">
+    <h4>Page 1 — Executive Overview</h4>
+    <p>High-level KPI cards, revenue trend line chart, regional map, YoY comparison. The CEO's first view — must load in under 3 seconds.</p>
+    <div class="page-tags">
+      <span class="ptag">KPI Cards (6)</span>
+      <span class="ptag">Line Chart — Monthly Revenue</span>
+      <span class="ptag">Map Visual — Revenue by City</span>
+      <span class="ptag">Bar Chart — Region Comparison</span>
+      <span class="ptag">YoY Card with Conditional Formatting</span>
+      <span class="ptag">Date Slicer</span>
+    </div>
+  </div>
+</div>
+
+<div class="page-card">
+  <div class="page-icon">📈</div>
+  <div class="page-info">
+    <h4>Page 2 — Sales Deep-Dive</h4>
+    <p>Drill-through product and store performance. Matrix visual with category/subcategory hierarchy. Store ranking table with conditional formatting bars.</p>
+    <div class="page-tags">
+      <span class="ptag">Matrix — Category Hierarchy</span>
+      <span class="ptag">Scatter — Revenue vs Margin</span>
+      <span class="ptag">Table — Store Ranking with Data Bars</span>
+      <span class="ptag">Donut — Channel Mix</span>
+      <span class="ptag">Drill-through enabled</span>
+      <span class="ptag">Top N Filter</span>
+    </div>
+  </div>
+</div>
+
+<div class="page-card">
+  <div class="page-icon">👥</div>
+  <div class="page-info">
+    <h4>Page 3 — Customer Intelligence</h4>
+    <p>RFM segment donut, churn risk gauge, customer lifetime value distribution. Filters by loyalty tier and risk level.</p>
+    <div class="page-tags">
+      <span class="ptag">Donut — RFM Segments</span>
+      <span class="ptag">Gauge — Avg Churn Probability</span>
+      <span class="ptag">Table — At-Risk Customers</span>
+      <span class="ptag">Bar — Segment Revenue Share</span>
+      <span class="ptag">Slicer — Loyalty Tier</span>
+      <span class="ptag">Slicer — Churn Risk Level</span>
+    </div>
+  </div>
+</div>
+
+<div class="page-card">
+  <div class="page-icon">📦</div>
+  <div class="page-info">
+    <h4>Page 4 — Inventory & Supply Chain</h4>
+    <p>Stock status summary, reorder alert table, inventory value by category, low-stock heatmap by region.</p>
+    <div class="page-tags">
+      <span class="ptag">Card — Out of Stock Count</span>
+      <span class="ptag">Table — Reorder Alerts (Red-highlighted)</span>
+      <span class="ptag">Bar — Stock by Category</span>
+      <span class="ptag">Matrix — Region × Status Heatmap</span>
+      <span class="ptag">Conditional Formatting (Red/Amber/Green)</span>
+    </div>
+  </div>
+</div>
+
+<div class="page-card">
+  <div class="page-icon">🤖</div>
+  <div class="page-info">
+    <h4>Page 5 — AI Insights</h4>
+    <p>The centrepiece: AI-generated narrative, 90-day revenue forecast with confidence band, anomaly flags, and sentiment heatmap.</p>
+    <div class="page-tags">
+      <span class="ptag">Smart Narrative Visual</span>
+      <span class="ptag">Forecast Line Chart (90-day)</span>
+      <span class="ptag">Anomaly Detection Visual</span>
+      <span class="ptag">Decomposition Tree — Revenue Drivers</span>
+      <span class="ptag">Key Influencers Visual</span>
+      <span class="ptag">Sentiment Matrix Heatmap</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- AI VISUALS -->
+<div class="section">
+<h2>🤖 Step 4 — Enabling AI Visuals</h2>
+
+<div class="ai-card">
+  <h4>Smart Narrative (Auto-generated Insights)</h4>
+  <p>Insert → Smart Narrative. Drag <code>[Total Revenue]</code>, <code>[YoY Revenue Growth]</code>, and <code>[High Risk Customers]</code> into the field well. Power BI will auto-generate sentences like "Revenue grew 8% YoY. 1,985 customers are at high churn risk." Customise the template in the Format pane.</p>
+</div>
+
+<div class="ai-card">
+  <h4>Sales Forecast (Built-in Analytics)</h4>
+  <p>Create a line chart with <code>dim_date[date_id]</code> on X-axis and <code>[Total Revenue]</code> on Y-axis. In the Analytics pane → Forecast → set Units = Months, Forecast length = 3, Confidence interval = 95%. This adds the shaded forecast cone directly to the chart.</p>
+</div>
+
+<div class="ai-card">
+  <h4>Anomaly Detection</h4>
+  <p>In the same line chart, Analytics pane → Find Anomalies → Sensitivity = 85%. Power BI will automatically highlight anomalous data points with red dots and explain them in a tooltip: "Revenue was 23% below expected on this date."</p>
+</div>
+
+<div class="ai-card">
+  <h4>Key Influencers Visual</h4>
+  <p>Insert → Key Influencers. Set Analyze = <code>[Total Revenue]</code>. Add Explain by: <code>dim_stores[region]</code>, <code>dim_products[category]</code>, <code>dim_customers[loyalty_tier]</code>, <code>rfm_scores[segment]</code>. Power BI uses ML to identify which factors most drive revenue changes.</p>
+</div>
+
+<div class="ai-card">
+  <h4>Decomposition Tree</h4>
+  <p>Insert → Decomposition Tree. Analyze = <code>[Total Revenue]</code>. Add Explain by: Region → Store Type → Category → Subcategory → Product. Users can interactively drill down to find the exact root cause of revenue differences.</p>
+</div>
+
+<div class="tip">Enable the "Preview features" in Power BI settings to access Copilot — it can generate DAX measures from natural language and create report pages automatically from your data model.</div>
+</div>
+
+<!-- RLS -->
+<div class="section">
+<h2>🔒 Step 5 — Row-Level Security</h2>
+<div class="card">
+  <h3>Regional Manager RLS</h3>
+  <p>In Modeling → Manage Roles → Create role "RegionalManager". Add DAX filter to <code>dim_stores</code>:</p>
+  <pre>[region] = USERPRINCIPALNAME() -- or use a lookup table mapping email → region</pre>
+  <p style="margin-top:0.75rem">For a mapping table approach, create a <code>user_region_map</code> table (email, region) and filter:</p>
+  <pre>dim_stores[region] IN
+    CALCULATETABLE(
+        VALUES(user_region_map[region]),
+        user_region_map[email] = USERPRINCIPALNAME()
+    )</pre>
+  <div class="warn">Always test RLS with "View as Role" before publishing. RLS is enforced in Power BI Service — in Desktop, all data is visible unless you explicitly test the role.</div>
+</div>
+</div>
+
+<!-- PUBLISHING -->
+<div class="section">
+<h2>🚀 Step 6 — Publishing & Scheduled Refresh</h2>
+<div class="step-grid">
+  <div class="step"><div class="step-num">01</div><h4>Publish to Power BI Service</h4><p>File → Publish → Select your workspace. The .pbix file uploads to the cloud. All team members with workspace access can view the report.</p></div>
+  <div class="step"><div class="step-num">02</div><h4>Configure Data Gateway</h4><p>If using DirectQuery or on-premise SQL: install On-premises Data Gateway on the server. Connect in Power BI Service → Settings → Manage Gateways.</p></div>
+  <div class="step"><div class="step-num">03</div><h4>Set Scheduled Refresh</h4><p>Dataset Settings → Scheduled Refresh → Daily at 6:00 AM. For CSV files from Python pipeline, schedule the Python script to run at 5:30 AM first.</p></div>
+  <div class="step"><div class="step-num">04</div><h4>Share & Embed</h4><p>Share the report URL with stakeholders, or embed in a Teams tab or SharePoint page. Use "Publish to web" only for non-sensitive public data.</p></div>
+</div>
+</div>
+
+<!-- CHECKLIST -->
+<div class="section">
+<h2>✅ Completion Checklist</h2>
+<div class="card">
+  <ul style="list-style:none;padding:0">
+    <li style="padding:0.4rem 0;border-bottom:1px solid var(--bd)">☐ &nbsp;All 5 tables connected in star schema with correct cardinality</li>
+    <li style="padding:0.4rem 0;border-bottom:1px solid var(--bd)">☐ &nbsp;dim_date marked as Date Table</li>
+    <li style="padding:0.4rem 0;border-bottom:1px solid var(--bd)">☐ &nbsp;All 7 core DAX measures created in _Measures table</li>
+    <li style="padding:0.4rem 0;border-bottom:1px solid var(--bd)">☐ &nbsp;All 5 report pages built with correct visuals</li>
+    <li style="padding:0.4rem 0;border-bottom:1px solid var(--bd)">☐ &nbsp;Smart Narrative generating insights on AI page</li>
+    <li style="padding:0.4rem 0;border-bottom:1px solid var(--bd)">☐ &nbsp;Forecast + Anomaly Detection enabled on revenue chart</li>
+    <li style="padding:0.4rem 0;border-bottom:1px solid var(--bd)">☐ &nbsp;Key Influencers visual configured with 4+ explain-by fields</li>
+    <li style="padding:0.4rem 0;border-bottom:1px solid var(--bd)">☐ &nbsp;RLS tested for at least 2 regional roles</li>
+    <li style="padding:0.4rem 0;border-bottom:1px solid var(--bd)">☐ &nbsp;Report published to Power BI Service</li>
+    <li style="padding:0.4rem 0">☐ &nbsp;Scheduled refresh configured and tested</li>
+  </ul>
+</div>
+</div>
+
+</main>
+</body>
+</html>

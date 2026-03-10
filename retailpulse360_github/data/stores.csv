@@ -1,0 +1,26 @@
+store_id,store_name,city,region,store_type,open_date,sqft,num_employees,manager,monthly_rent
+S001,NovaMart Chicago,Chicago,North,Flagship,2019-11-24,8000,23,Manager_001,63598
+S002,NovaMart Minneapolis,Minneapolis,North,Standard,2019-05-21,12000,48,Manager_002,24144
+S003,NovaMart Detroit,Detroit,North,Express,2019-02-22,35000,31,Manager_003,53698
+S004,NovaMart Milwaukee,Milwaukee,North,Flagship,2019-08-05,8000,23,Manager_004,21140
+S005,NovaMart Indianapolis,Indianapolis,North,Standard,2019-04-22,12000,84,Manager_005,54453
+S006,NovaMart Houston,Houston,South,Flagship,2019-01-14,35000,45,Manager_006,61925
+S007,NovaMart Atlanta,Atlanta,South,Standard,2019-11-29,35000,73,Manager_007,29446
+S008,NovaMart Miami,Miami,South,Express,2019-08-18,35000,55,Manager_008,68046
+S009,NovaMart New Orleans,New Orleans,South,Flagship,2019-01-04,12000,109,Manager_009,42696
+S010,NovaMart Nashville,Nashville,South,Standard,2019-06-24,18000,39,Manager_010,29110
+S011,NovaMart New York,New York,East,Flagship,2019-06-22,8000,31,Manager_011,39898
+S012,NovaMart Boston,Boston,East,Standard,2019-02-19,18000,64,Manager_012,54565
+S013,NovaMart Philadelphia,Philadelphia,East,Express,2019-05-16,8000,113,Manager_013,45108
+S014,NovaMart Baltimore,Baltimore,East,Flagship,2019-10-02,8000,68,Manager_014,20164
+S015,NovaMart Newark,Newark,East,Standard,2019-10-10,18000,100,Manager_015,55535
+S016,NovaMart Los Angeles,Los Angeles,West,Flagship,2019-07-05,35000,44,Manager_016,61174
+S017,NovaMart San Francisco,San Francisco,West,Standard,2019-02-05,8000,104,Manager_017,29935
+S018,NovaMart Seattle,Seattle,West,Express,2019-05-29,8000,49,Manager_018,71785
+S019,NovaMart Portland,Portland,West,Flagship,2019-02-21,25000,55,Manager_019,44714
+S020,NovaMart Denver,Denver,West,Standard,2019-11-22,18000,40,Manager_020,39260
+S021,NovaMart Dallas,Dallas,Central,Flagship,2019-07-01,12000,105,Manager_021,32496
+S022,NovaMart Kansas City,Kansas City,Central,Standard,2019-12-26,8000,97,Manager_022,56613
+S023,NovaMart St. Louis,St. Louis,Central,Express,2019-03-29,35000,113,Manager_023,31043
+S024,NovaMart Omaha,Omaha,Central,Flagship,2019-03-25,25000,68,Manager_024,32691
+S025,NovaMart Tulsa,Tulsa,Central,Standard,2019-11-24,35000,48,Manager_025,59866

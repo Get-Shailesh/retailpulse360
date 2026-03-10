@@ -1,0 +1,227 @@
+product_id,product_name,category,subcategory,brand,unit_cost,unit_price,margin_pct,supplier,reorder_level,weight_kg
+P0001,ValuePro Smartphone 941,Electronics,Smartphone,NovaBrand,337.93,768.72,56.0,Supplier_26,30,8.08
+P0002,SmartPick Smartphone 317,Electronics,Smartphone,TechEdge,31.14,80.94,61.5,Supplier_13,39,2.94
+P0003,EliteChoice Smartphone 864,Electronics,Smartphone,NatureCo,60.15,133.07,54.8,Supplier_29,47,8.05
+P0004,TechEdge Smartphone 193,Electronics,Smartphone,NovaBrand,91.63,261.07,64.9,Supplier_28,17,3.14
+P0005,AlphaLine Smartphone 494,Electronics,Smartphone,NatureCo,68.19,142.71,52.2,Supplier_20,39,10.63
+P0006,NovaBrand Smartphone 796,Electronics,Smartphone,AlphaLine,388.58,957.83,59.4,Supplier_22,44,15.04
+P0007,EliteChoice Smartphone 545,Electronics,Smartphone,PrimePlus,308.6,502.66,38.6,Supplier_15,10,19.08
+P0008,PrimePlus Smartphone 619,Electronics,Smartphone,AlphaLine,350.96,544.42,35.5,Supplier_28,50,6.04
+P0009,PrimePlus Laptop 652,Electronics,Laptop,NovaBrand,245.54,356.44,31.1,Supplier_20,30,9.82
+P0010,EliteChoice Laptop 345,Electronics,Laptop,NovaBrand,49.19,81.33,39.5,Supplier_08,46,18.94
+P0011,AlphaLine Laptop 878,Electronics,Laptop,PrimePlus,38.83,69.89,44.4,Supplier_05,40,18.94
+P0012,NatureCo Laptop 316,Electronics,Laptop,ValuePro,70.23,130.31,46.1,Supplier_23,29,8.04
+P0013,TechEdge Laptop 223,Electronics,Laptop,ValuePro,270.32,450.06,39.9,Supplier_08,14,6.83
+P0014,ValuePro Laptop 107,Electronics,Laptop,AlphaLine,237.38,360.79,34.2,Supplier_23,50,1.27
+P0015,SmartPick Laptop 172,Electronics,Laptop,ValuePro,31.62,42.88,26.3,Supplier_09,41,4.36
+P0016,TechEdge Laptop 348,Electronics,Laptop,TechEdge,57.26,152.37,62.4,Supplier_26,36,3.89
+P0017,NatureCo Laptop 520,Electronics,Laptop,TechEdge,43.29,74.95,42.2,Supplier_28,13,13.5
+P0018,NatureCo Laptop 845,Electronics,Laptop,SmartPick,393.75,554.08,28.9,Supplier_26,16,5.05
+P0019,PrimePlus Tablet 385,Electronics,Tablet,TechEdge,216.83,312.47,30.6,Supplier_08,14,8.92
+P0020,NovaBrand Tablet 767,Electronics,Tablet,NovaBrand,345.23,651.54,47.0,Supplier_03,25,3.41
+P0021,NatureCo Tablet 160,Electronics,Tablet,PrimePlus,196.83,296.21,33.5,Supplier_13,10,19.71
+P0022,TechEdge Tablet 392,Electronics,Tablet,NatureCo,109.76,251.53,56.4,Supplier_23,45,13.27
+P0023,ValuePro Tablet 159,Electronics,Tablet,NovaBrand,197.24,292.62,32.6,Supplier_24,30,1.24
+P0024,PrimePlus Tablet 158,Electronics,Tablet,AlphaLine,235.75,429.53,45.1,Supplier_28,21,1.46
+P0025,NatureCo Tablet 222,Electronics,Tablet,ValuePro,31.84,78.56,59.5,Supplier_19,48,0.89
+P0026,SmartPick Headphones 367,Electronics,Headphones,ValuePro,170.59,330.26,48.3,Supplier_22,30,4.85
+P0027,EliteChoice Headphones 568,Electronics,Headphones,SmartPick,161.34,335.2,51.9,Supplier_30,14,0.29
+P0028,AlphaLine Headphones 175,Electronics,Headphones,ValuePro,250.36,477.06,47.5,Supplier_17,26,2.74
+P0029,ValuePro Headphones 478,Electronics,Headphones,EliteChoice,142.86,197.73,27.8,Supplier_06,38,16.69
+P0030,NovaBrand Headphones 783,Electronics,Headphones,EliteChoice,282.9,559.83,49.5,Supplier_30,16,18.78
+P0031,AlphaLine Headphones 860,Electronics,Headphones,PrimePlus,58.04,82.46,29.6,Supplier_09,28,12.14
+P0032,EliteChoice Smartwatch 617,Electronics,Smartwatch,TechEdge,85.42,172.11,50.4,Supplier_09,13,1.94
+P0033,NovaBrand Smartwatch 441,Electronics,Smartwatch,PrimePlus,172.31,269.52,36.1,Supplier_21,26,3.32
+P0034,NovaBrand Smartwatch 214,Electronics,Smartwatch,AlphaLine,179.53,383.83,53.2,Supplier_29,19,10.96
+P0035,PrimePlus Smartwatch 540,Electronics,Smartwatch,PrimePlus,334.67,647.34,48.3,Supplier_02,29,7.36
+P0036,NovaBrand Smartwatch 466,Electronics,Smartwatch,ValuePro,373.57,1034.47,63.9,Supplier_22,25,13.37
+P0037,NatureCo Smartwatch 735,Electronics,Smartwatch,PrimePlus,144.7,275.07,47.4,Supplier_30,25,17.31
+P0038,NatureCo Smartwatch 125,Electronics,Smartwatch,PrimePlus,390.6,917.57,57.4,Supplier_24,31,15.67
+P0039,ValuePro Smartwatch 373,Electronics,Smartwatch,PrimePlus,167.63,347.75,51.8,Supplier_26,16,7.71
+P0040,TechEdge Camera 458,Electronics,Camera,EliteChoice,344.14,520.61,33.9,Supplier_27,24,4.54
+P0041,EliteChoice Camera 985,Electronics,Camera,AlphaLine,265.71,449.89,40.9,Supplier_25,27,7.09
+P0042,SmartPick Camera 128,Electronics,Camera,AlphaLine,206.22,431.25,52.2,Supplier_29,26,3.65
+P0043,AlphaLine Camera 710,Electronics,Camera,NatureCo,385.2,598.31,35.6,Supplier_12,30,8.78
+P0044,ValuePro Camera 360,Electronics,Camera,NovaBrand,393.77,559.54,29.6,Supplier_23,37,0.13
+P0045,ValuePro Camera 472,Electronics,Camera,NatureCo,370.6,693.2,46.5,Supplier_03,31,12.5
+P0046,EliteChoice T-Shirt 782,Clothing,T-Shirt,NatureCo,289.3,459.3,37.0,Supplier_11,35,13.97
+P0047,NatureCo T-Shirt 793,Clothing,T-Shirt,PrimePlus,223.99,332.69,32.7,Supplier_20,46,6.09
+P0048,EliteChoice T-Shirt 315,Clothing,T-Shirt,NatureCo,221.44,295.32,25.0,Supplier_26,47,12.17
+P0049,ValuePro T-Shirt 623,Clothing,T-Shirt,TechEdge,132.29,230.76,42.7,Supplier_26,20,13.21
+P0050,SmartPick T-Shirt 195,Clothing,T-Shirt,ValuePro,117.1,241.71,51.6,Supplier_22,29,4.57
+P0051,ValuePro T-Shirt 586,Clothing,T-Shirt,AlphaLine,83.66,113.02,26.0,Supplier_15,36,17.73
+P0052,TechEdge Jeans 509,Clothing,Jeans,ValuePro,81.8,173.5,52.9,Supplier_05,10,17.86
+P0053,NatureCo Jeans 324,Clothing,Jeans,PrimePlus,344.87,871.29,60.4,Supplier_26,43,9.34
+P0054,AlphaLine Jeans 567,Clothing,Jeans,PrimePlus,225.18,587.92,61.7,Supplier_26,39,13.38
+P0055,TechEdge Jeans 727,Clothing,Jeans,NatureCo,395.22,772.19,48.8,Supplier_27,45,8.97
+P0056,TechEdge Jeans 365,Clothing,Jeans,ValuePro,67.87,167.41,59.5,Supplier_27,50,5.62
+P0057,ValuePro Jeans 381,Clothing,Jeans,TechEdge,312.18,561.31,44.4,Supplier_03,28,4.77
+P0058,AlphaLine Jeans 241,Clothing,Jeans,PrimePlus,137.66,350.47,60.7,Supplier_08,34,13.91
+P0059,NatureCo Jeans 438,Clothing,Jeans,TechEdge,284.04,392.15,27.6,Supplier_14,13,4.22
+P0060,NovaBrand Jeans 977,Clothing,Jeans,NatureCo,170.96,440.55,61.2,Supplier_16,10,18.86
+P0061,NatureCo Jeans 651,Clothing,Jeans,ValuePro,122.95,206.98,40.6,Supplier_16,24,5.53
+P0062,NatureCo Jacket 841,Clothing,Jacket,PrimePlus,16.46,26.74,38.4,Supplier_27,39,18.4
+P0063,NatureCo Jacket 706,Clothing,Jacket,NovaBrand,392.39,731.59,46.4,Supplier_03,37,2.8
+P0064,NatureCo Jacket 435,Clothing,Jacket,ValuePro,187.37,256.71,27.0,Supplier_15,30,6.82
+P0065,NatureCo Jacket 358,Clothing,Jacket,AlphaLine,352.46,551.84,36.1,Supplier_16,11,15.01
+P0066,ValuePro Jacket 765,Clothing,Jacket,AlphaLine,25.57,69.25,63.1,Supplier_25,12,15.11
+P0067,NovaBrand Jacket 736,Clothing,Jacket,PrimePlus,380.1,567.1,33.0,Supplier_08,18,9.52
+P0068,TechEdge Jacket 816,Clothing,Jacket,EliteChoice,50.18,135.29,62.9,Supplier_25,33,3.44
+P0069,AlphaLine Jacket 896,Clothing,Jacket,PrimePlus,244.86,543.13,54.9,Supplier_10,16,11.62
+P0070,NatureCo Jacket 506,Clothing,Jacket,ValuePro,371.91,715.65,48.0,Supplier_03,47,13.84
+P0071,AlphaLine Dress 915,Clothing,Dress,NovaBrand,45.25,102.61,55.9,Supplier_12,44,8.62
+P0072,SmartPick Dress 112,Clothing,Dress,NatureCo,151.38,276.43,45.2,Supplier_27,41,2.2
+P0073,TechEdge Dress 824,Clothing,Dress,PrimePlus,384.51,775.59,50.4,Supplier_14,21,14.7
+P0074,TechEdge Dress 576,Clothing,Dress,NatureCo,386.36,601.84,35.8,Supplier_27,47,5.44
+P0075,AlphaLine Dress 385,Clothing,Dress,TechEdge,341.43,817.39,58.2,Supplier_08,39,11.44
+P0076,TechEdge Dress 971,Clothing,Dress,SmartPick,268.93,436.97,38.5,Supplier_06,41,4.32
+P0077,EliteChoice Dress 669,Clothing,Dress,NovaBrand,320.14,521.52,38.6,Supplier_17,22,1.8
+P0078,TechEdge Shoes 761,Clothing,Shoes,TechEdge,197.99,443.19,55.3,Supplier_15,11,1.95
+P0079,EliteChoice Shoes 779,Clothing,Shoes,SmartPick,92.53,195.51,52.7,Supplier_16,45,10.67
+P0080,SmartPick Shoes 460,Clothing,Shoes,TechEdge,173.07,383.22,54.8,Supplier_09,29,5.1
+P0081,AlphaLine Shoes 860,Clothing,Shoes,PrimePlus,52.66,78.25,32.7,Supplier_07,23,14.8
+P0082,EliteChoice Shoes 202,Clothing,Shoes,ValuePro,114.22,222.15,48.6,Supplier_10,24,7.28
+P0083,PrimePlus Shoes 380,Clothing,Shoes,NovaBrand,124.4,266.5,53.3,Supplier_02,45,5.91
+P0084,TechEdge Shoes 205,Clothing,Shoes,NovaBrand,377.92,763.7,50.5,Supplier_19,28,9.44
+P0085,NovaBrand Shoes 358,Clothing,Shoes,TechEdge,178.99,264.68,32.4,Supplier_04,14,8.07
+P0086,NovaBrand Shoes 255,Clothing,Shoes,PrimePlus,34.26,68.76,50.2,Supplier_26,46,18.99
+P0087,NatureCo Accessories 720,Clothing,Accessories,ValuePro,397.6,565.88,29.7,Supplier_25,43,7.67
+P0088,NatureCo Accessories 412,Clothing,Accessories,NovaBrand,363.86,576.59,36.9,Supplier_20,16,18.96
+P0089,AlphaLine Accessories 260,Clothing,Accessories,ValuePro,87.08,130.83,33.4,Supplier_06,45,1.59
+P0090,TechEdge Accessories 398,Clothing,Accessories,NovaBrand,6.06,10.64,43.0,Supplier_08,28,14.17
+P0091,ValuePro Accessories 370,Clothing,Accessories,ValuePro,282.68,497.34,43.2,Supplier_14,17,10.94
+P0092,PrimePlus Accessories 173,Clothing,Accessories,NovaBrand,260.82,674.59,61.3,Supplier_06,29,11.94
+P0093,TechEdge Beverages 805,Groceries,Beverages,EliteChoice,368.87,642.25,42.6,Supplier_23,35,18.86
+P0094,AlphaLine Beverages 712,Groceries,Beverages,NovaBrand,202.69,366.87,44.8,Supplier_29,37,14.72
+P0095,ValuePro Beverages 790,Groceries,Beverages,NovaBrand,243.47,329.17,26.0,Supplier_25,27,11.57
+P0096,TechEdge Beverages 384,Groceries,Beverages,PrimePlus,306.43,450.68,32.0,Supplier_19,37,12.73
+P0097,SmartPick Beverages 518,Groceries,Beverages,SmartPick,199.23,279.23,28.6,Supplier_11,16,17.17
+P0098,EliteChoice Beverages 778,Groceries,Beverages,NatureCo,135.27,286.27,52.7,Supplier_27,45,0.83
+P0099,AlphaLine Beverages 891,Groceries,Beverages,NatureCo,39.78,61.29,35.1,Supplier_28,42,16.52
+P0100,TechEdge Beverages 523,Groceries,Beverages,NovaBrand,5.45,13.55,59.8,Supplier_07,43,7.3
+P0101,NovaBrand Beverages 308,Groceries,Beverages,EliteChoice,303.8,607.8,50.0,Supplier_18,18,18.56
+P0102,AlphaLine Beverages 129,Groceries,Beverages,ValuePro,178.06,378.29,52.9,Supplier_23,20,6.28
+P0103,AlphaLine Snacks 572,Groceries,Snacks,AlphaLine,223.14,313.08,28.7,Supplier_21,19,10.02
+P0104,EliteChoice Snacks 525,Groceries,Snacks,TechEdge,288.06,527.15,45.4,Supplier_16,25,9.19
+P0105,PrimePlus Snacks 984,Groceries,Snacks,AlphaLine,62.13,92.21,32.6,Supplier_09,36,6.86
+P0106,NovaBrand Snacks 389,Groceries,Snacks,EliteChoice,316.15,491.58,35.7,Supplier_27,47,11.64
+P0107,TechEdge Snacks 651,Groceries,Snacks,TechEdge,265.68,657.79,59.6,Supplier_12,31,11.08
+P0108,SmartPick Snacks 990,Groceries,Snacks,ValuePro,219.65,386.8,43.2,Supplier_23,25,11.48
+P0109,SmartPick Dairy 862,Groceries,Dairy,TechEdge,343.13,585.86,41.4,Supplier_23,34,7.78
+P0110,PrimePlus Dairy 607,Groceries,Dairy,NovaBrand,267.16,633.53,57.8,Supplier_05,42,19.31
+P0111,TechEdge Dairy 202,Groceries,Dairy,TechEdge,136.14,191.79,29.0,Supplier_01,19,8.26
+P0112,TechEdge Dairy 900,Groceries,Dairy,EliteChoice,263.64,383.06,31.2,Supplier_11,49,13.88
+P0113,NatureCo Dairy 424,Groceries,Dairy,TechEdge,261.69,639.37,59.1,Supplier_28,44,0.81
+P0114,EliteChoice Dairy 332,Groceries,Dairy,AlphaLine,32.03,64.38,50.2,Supplier_14,16,15.23
+P0115,PrimePlus Dairy 810,Groceries,Dairy,EliteChoice,283.04,398.76,29.0,Supplier_29,11,1.02
+P0116,PrimePlus Produce 350,Groceries,Produce,NatureCo,120.88,201.45,40.0,Supplier_19,21,3.48
+P0117,ValuePro Produce 609,Groceries,Produce,PrimePlus,36.19,90.1,59.8,Supplier_08,39,12.79
+P0118,TechEdge Produce 394,Groceries,Produce,PrimePlus,186.53,385.98,51.7,Supplier_03,38,18.91
+P0119,NatureCo Produce 806,Groceries,Produce,EliteChoice,395.12,626.84,37.0,Supplier_15,29,4.06
+P0120,ValuePro Produce 490,Groceries,Produce,SmartPick,156.95,281.92,44.3,Supplier_19,28,19.85
+P0121,NatureCo Produce 381,Groceries,Produce,NovaBrand,121.62,338.94,64.1,Supplier_19,13,18.22
+P0122,ValuePro Bakery 721,Groceries,Bakery,SmartPick,333.97,858.92,61.1,Supplier_08,50,3.88
+P0123,PrimePlus Bakery 743,Groceries,Bakery,AlphaLine,104.0,232.26,55.2,Supplier_29,50,12.96
+P0124,SmartPick Bakery 849,Groceries,Bakery,PrimePlus,127.03,221.43,42.6,Supplier_03,28,6.6
+P0125,SmartPick Bakery 643,Groceries,Bakery,EliteChoice,169.12,252.54,33.0,Supplier_27,20,5.21
+P0126,EliteChoice Bakery 864,Groceries,Bakery,SmartPick,330.75,593.53,44.3,Supplier_26,17,9.42
+P0127,ValuePro Bakery 980,Groceries,Bakery,NatureCo,34.74,77.49,55.2,Supplier_28,45,7.38
+P0128,AlphaLine Bakery 565,Groceries,Bakery,SmartPick,317.32,426.26,25.6,Supplier_22,26,11.73
+P0129,AlphaLine Bakery 791,Groceries,Bakery,ValuePro,329.85,882.23,62.6,Supplier_16,11,12.43
+P0130,ValuePro Bakery 763,Groceries,Bakery,AlphaLine,377.55,610.13,38.1,Supplier_21,39,18.2
+P0131,NovaBrand Frozen 138,Groceries,Frozen,EliteChoice,261.45,371.73,29.7,Supplier_16,17,2.03
+P0132,TechEdge Frozen 479,Groceries,Frozen,NatureCo,355.47,510.93,30.4,Supplier_19,19,17.72
+P0133,NatureCo Frozen 386,Groceries,Frozen,NovaBrand,263.69,633.07,58.3,Supplier_23,33,4.42
+P0134,SmartPick Frozen 201,Groceries,Frozen,SmartPick,180.65,275.57,34.4,Supplier_18,32,1.3
+P0135,TechEdge Frozen 193,Groceries,Frozen,ValuePro,113.97,314.21,63.7,Supplier_21,50,11.98
+P0136,ValuePro Frozen 228,Groceries,Frozen,ValuePro,13.44,30.88,56.5,Supplier_03,45,4.22
+P0137,SmartPick Frozen 892,Groceries,Frozen,PrimePlus,90.3,224.56,59.8,Supplier_26,48,0.16
+P0138,PrimePlus Frozen 653,Groceries,Frozen,EliteChoice,344.07,497.12,30.8,Supplier_26,21,2.29
+P0139,ValuePro Cookware 702,Home & Kitchen,Cookware,SmartPick,57.06,94.05,39.3,Supplier_01,21,5.38
+P0140,AlphaLine Cookware 863,Home & Kitchen,Cookware,AlphaLine,55.07,94.68,41.8,Supplier_16,38,15.58
+P0141,ValuePro Cookware 729,Home & Kitchen,Cookware,NovaBrand,207.73,294.08,29.4,Supplier_24,43,6.1
+P0142,TechEdge Cookware 967,Home & Kitchen,Cookware,NatureCo,259.12,351.33,26.2,Supplier_14,16,9.86
+P0143,AlphaLine Cookware 429,Home & Kitchen,Cookware,PrimePlus,364.33,505.59,27.9,Supplier_03,18,5.57
+P0144,SmartPick Cookware 490,Home & Kitchen,Cookware,EliteChoice,255.07,480.67,46.9,Supplier_15,42,12.15
+P0145,ValuePro Furniture 540,Home & Kitchen,Furniture,TechEdge,318.27,451.94,29.6,Supplier_29,24,8.33
+P0146,AlphaLine Furniture 420,Home & Kitchen,Furniture,NatureCo,331.83,561.94,40.9,Supplier_11,26,7.55
+P0147,AlphaLine Furniture 193,Home & Kitchen,Furniture,AlphaLine,65.29,171.45,61.9,Supplier_03,37,2.02
+P0148,NovaBrand Furniture 700,Home & Kitchen,Furniture,SmartPick,296.82,697.92,57.5,Supplier_22,17,8.28
+P0149,NatureCo Furniture 988,Home & Kitchen,Furniture,NovaBrand,350.07,937.15,62.6,Supplier_10,48,6.32
+P0150,PrimePlus Furniture 772,Home & Kitchen,Furniture,TechEdge,45.92,83.94,45.3,Supplier_08,16,7.07
+P0151,ValuePro Bedding 926,Home & Kitchen,Bedding,NatureCo,150.19,337.54,55.5,Supplier_28,45,19.49
+P0152,NovaBrand Bedding 723,Home & Kitchen,Bedding,EliteChoice,328.28,650.61,49.5,Supplier_01,21,5.54
+P0153,SmartPick Bedding 106,Home & Kitchen,Bedding,PrimePlus,306.15,802.73,61.9,Supplier_28,19,11.37
+P0154,NovaBrand Bedding 193,Home & Kitchen,Bedding,ValuePro,163.31,235.57,30.7,Supplier_13,36,9.13
+P0155,SmartPick Bedding 895,Home & Kitchen,Bedding,AlphaLine,67.18,107.43,37.5,Supplier_29,13,3.2
+P0156,AlphaLine Bedding 378,Home & Kitchen,Bedding,TechEdge,303.0,415.01,27.0,Supplier_22,37,9.76
+P0157,AlphaLine Bedding 453,Home & Kitchen,Bedding,NatureCo,179.61,280.32,35.9,Supplier_04,28,13.6
+P0158,EliteChoice Bedding 146,Home & Kitchen,Bedding,ValuePro,239.29,443.77,46.1,Supplier_13,48,1.19
+P0159,PrimePlus Bedding 882,Home & Kitchen,Bedding,EliteChoice,85.75,230.59,62.8,Supplier_10,30,2.49
+P0160,PrimePlus Bedding 489,Home & Kitchen,Bedding,ValuePro,201.47,348.72,42.2,Supplier_17,45,16.68
+P0161,NovaBrand Lighting 546,Home & Kitchen,Lighting,NovaBrand,33.47,82.58,59.5,Supplier_15,14,17.26
+P0162,NatureCo Lighting 396,Home & Kitchen,Lighting,AlphaLine,232.42,446.41,47.9,Supplier_13,11,19.33
+P0163,TechEdge Lighting 951,Home & Kitchen,Lighting,SmartPick,72.89,196.49,62.9,Supplier_03,37,16.91
+P0164,AlphaLine Lighting 505,Home & Kitchen,Lighting,EliteChoice,101.11,196.54,48.6,Supplier_24,31,4.51
+P0165,AlphaLine Lighting 643,Home & Kitchen,Lighting,ValuePro,312.75,434.71,28.1,Supplier_29,32,7.09
+P0166,PrimePlus Lighting 341,Home & Kitchen,Lighting,AlphaLine,383.5,779.75,50.8,Supplier_05,26,4.03
+P0167,AlphaLine Lighting 281,Home & Kitchen,Lighting,TechEdge,242.95,544.84,55.4,Supplier_15,46,15.22
+P0168,SmartPick Lighting 984,Home & Kitchen,Lighting,SmartPick,182.32,479.36,62.0,Supplier_05,38,1.46
+P0169,NovaBrand Decor 460,Home & Kitchen,Decor,AlphaLine,254.4,589.61,56.9,Supplier_10,39,9.09
+P0170,AlphaLine Decor 760,Home & Kitchen,Decor,AlphaLine,27.47,65.82,58.3,Supplier_20,48,10.19
+P0171,NovaBrand Decor 560,Home & Kitchen,Decor,ValuePro,187.77,355.44,47.2,Supplier_11,48,9.57
+P0172,AlphaLine Decor 930,Home & Kitchen,Decor,SmartPick,64.59,89.06,27.5,Supplier_23,15,10.14
+P0173,TechEdge Decor 549,Home & Kitchen,Decor,PrimePlus,73.16,112.4,34.9,Supplier_12,33,18.37
+P0174,NovaBrand Decor 908,Home & Kitchen,Decor,SmartPick,158.03,358.98,56.0,Supplier_03,31,1.98
+P0175,PrimePlus Decor 441,Home & Kitchen,Decor,AlphaLine,272.96,428.95,36.4,Supplier_19,19,18.34
+P0176,NatureCo Decor 232,Home & Kitchen,Decor,AlphaLine,127.54,261.58,51.2,Supplier_10,45,7.6
+P0177,AlphaLine Decor 761,Home & Kitchen,Decor,NatureCo,317.71,748.04,57.5,Supplier_17,33,0.46
+P0178,TechEdge Storage 296,Home & Kitchen,Storage,ValuePro,76.2,114.7,33.6,Supplier_05,19,1.64
+P0179,NovaBrand Storage 777,Home & Kitchen,Storage,SmartPick,338.55,477.14,29.0,Supplier_29,49,2.71
+P0180,PrimePlus Storage 838,Home & Kitchen,Storage,TechEdge,153.8,224.49,31.5,Supplier_02,36,7.35
+P0181,EliteChoice Storage 870,Home & Kitchen,Storage,TechEdge,289.24,798.64,63.8,Supplier_08,44,4.86
+P0182,ValuePro Storage 476,Home & Kitchen,Storage,TechEdge,386.41,885.75,56.4,Supplier_15,28,15.58
+P0183,PrimePlus Storage 936,Home & Kitchen,Storage,ValuePro,203.65,349.59,41.7,Supplier_26,48,2.85
+P0184,SmartPick Storage 667,Home & Kitchen,Storage,AlphaLine,103.75,210.22,50.6,Supplier_23,43,17.04
+P0185,EliteChoice Storage 560,Home & Kitchen,Storage,PrimePlus,117.6,264.42,55.5,Supplier_27,37,1.93
+P0186,NovaBrand Fitness Equipment 524,Sports,Fitness Equipment,NovaBrand,327.6,826.96,60.4,Supplier_13,42,7.54
+P0187,ValuePro Fitness Equipment 128,Sports,Fitness Equipment,SmartPick,157.54,219.61,28.3,Supplier_30,16,16.8
+P0188,PrimePlus Fitness Equipment 139,Sports,Fitness Equipment,EliteChoice,261.73,603.83,56.7,Supplier_30,40,13.95
+P0189,TechEdge Fitness Equipment 730,Sports,Fitness Equipment,NovaBrand,59.82,127.88,53.2,Supplier_29,15,0.48
+P0190,NatureCo Fitness Equipment 213,Sports,Fitness Equipment,EliteChoice,90.18,130.66,31.0,Supplier_08,29,2.52
+P0191,TechEdge Fitness Equipment 164,Sports,Fitness Equipment,AlphaLine,99.18,200.6,50.6,Supplier_27,41,11.98
+P0192,ValuePro Fitness Equipment 835,Sports,Fitness Equipment,PrimePlus,11.49,21.13,45.6,Supplier_10,37,0.13
+P0193,AlphaLine Sportswear 636,Sports,Sportswear,SmartPick,100.02,171.45,41.7,Supplier_03,43,10.93
+P0194,NovaBrand Sportswear 499,Sports,Sportswear,TechEdge,315.63,577.07,45.3,Supplier_02,50,7.8
+P0195,SmartPick Sportswear 907,Sports,Sportswear,AlphaLine,152.45,337.97,54.9,Supplier_12,25,14.69
+P0196,SmartPick Sportswear 236,Sports,Sportswear,NovaBrand,253.16,573.54,55.9,Supplier_12,44,6.84
+P0197,TechEdge Sportswear 812,Sports,Sportswear,TechEdge,258.9,619.61,58.2,Supplier_21,21,16.25
+P0198,TechEdge Sportswear 137,Sports,Sportswear,EliteChoice,29.92,68.07,56.0,Supplier_07,12,15.84
+P0199,EliteChoice Sportswear 627,Sports,Sportswear,NatureCo,354.89,568.95,37.6,Supplier_27,44,9.52
+P0200,EliteChoice Sportswear 465,Sports,Sportswear,NovaBrand,19.47,39.63,50.9,Supplier_28,31,5.54
+P0201,TechEdge Outdoor Gear 495,Sports,Outdoor Gear,SmartPick,177.6,301.02,41.0,Supplier_06,41,13.87
+P0202,EliteChoice Outdoor Gear 920,Sports,Outdoor Gear,AlphaLine,150.1,348.19,56.9,Supplier_24,37,1.67
+P0203,EliteChoice Outdoor Gear 428,Sports,Outdoor Gear,AlphaLine,242.97,577.04,57.9,Supplier_03,30,13.25
+P0204,NatureCo Outdoor Gear 270,Sports,Outdoor Gear,TechEdge,126.07,247.71,49.1,Supplier_12,38,0.94
+P0205,NatureCo Outdoor Gear 381,Sports,Outdoor Gear,NovaBrand,348.66,572.53,39.1,Supplier_03,50,8.18
+P0206,PrimePlus Outdoor Gear 131,Sports,Outdoor Gear,PrimePlus,207.67,461.45,55.0,Supplier_28,48,13.59
+P0207,ValuePro Outdoor Gear 897,Sports,Outdoor Gear,SmartPick,178.08,254.58,30.0,Supplier_12,34,18.99
+P0208,TechEdge Outdoor Gear 479,Sports,Outdoor Gear,SmartPick,17.79,25.83,31.1,Supplier_15,14,11.52
+P0209,EliteChoice Supplements 355,Sports,Supplements,AlphaLine,149.95,240.21,37.6,Supplier_01,21,10.03
+P0210,EliteChoice Supplements 893,Sports,Supplements,EliteChoice,157.86,300.5,47.5,Supplier_23,38,4.37
+P0211,TechEdge Supplements 304,Sports,Supplements,AlphaLine,246.69,522.2,52.8,Supplier_05,14,9.1
+P0212,AlphaLine Supplements 929,Sports,Supplements,SmartPick,359.98,629.38,42.8,Supplier_22,32,14.22
+P0213,EliteChoice Supplements 971,Sports,Supplements,PrimePlus,222.25,350.63,36.6,Supplier_23,50,3.56
+P0214,ValuePro Supplements 911,Sports,Supplements,PrimePlus,147.79,223.82,34.0,Supplier_08,41,0.62
+P0215,PrimePlus Supplements 726,Sports,Supplements,AlphaLine,223.84,371.56,39.8,Supplier_03,29,8.02
+P0216,NatureCo Supplements 887,Sports,Supplements,NatureCo,288.19,515.98,44.1,Supplier_27,46,1.57
+P0217,TechEdge Supplements 577,Sports,Supplements,SmartPick,389.09,789.13,50.7,Supplier_05,45,12.83
+P0218,NatureCo Supplements 614,Sports,Supplements,NovaBrand,76.88,211.5,63.7,Supplier_27,17,10.41
+P0219,ValuePro Footwear 454,Sports,Footwear,EliteChoice,70.04,112.8,37.9,Supplier_28,15,5.09
+P0220,PrimePlus Footwear 740,Sports,Footwear,EliteChoice,255.85,483.04,47.0,Supplier_20,44,1.96
+P0221,PrimePlus Footwear 275,Sports,Footwear,SmartPick,258.19,503.02,48.7,Supplier_27,46,0.92
+P0222,EliteChoice Footwear 766,Sports,Footwear,ValuePro,346.19,482.49,28.2,Supplier_25,46,8.39
+P0223,EliteChoice Footwear 757,Sports,Footwear,EliteChoice,257.4,467.33,44.9,Supplier_16,25,16.11
+P0224,AlphaLine Footwear 805,Sports,Footwear,NovaBrand,275.57,436.7,36.9,Supplier_06,38,8.37
+P0225,PrimePlus Footwear 420,Sports,Footwear,SmartPick,188.45,306.96,38.6,Supplier_24,32,19.51
+P0226,AlphaLine Footwear 426,Sports,Footwear,ValuePro,56.65,94.14,39.8,Supplier_15,17,5.42
