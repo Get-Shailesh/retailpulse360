@@ -18,7 +18,7 @@
 
 <br/>
 
-**[📊 Live Interactive Dashboard](dashboard/RetailPulse360_LiveDemo.html)** · **[🗄️ SQL Schema](docs/retailpulse360_schema_queries.sql)** · **[📈 Power BI Guide](docs/PowerBI_Implementation_Guide.html)**
+**[📊 Live Interactive Dashboard](https://get-shailesh.github.io/retailpulse360/)** · **[🗄️ SQL Schema](docs/retailpulse360_schema_queries.sql)** · **[📈 Power BI Guide](docs/PowerBI_Implementation_Guide.html)**
 
 </div>
 
@@ -45,16 +45,16 @@
 
 RetailPulse 360 is a full-stack data analytics platform built for **NovaMart**, a fictional retail chain with 25 stores across 5 US regions. The project simulates a real-world data analyst role — from raw data to board-level insights.
 
-| Metric | Value |
-|--------|-------|
-| 📅 Date Range | Jan 2022 – Dec 2024 (3 years) |
-| 💰 Total Revenue | $160.9M |
-| 📈 GP Margin | 42.5% |
-| 🛒 Transactions | 151,687 |
-| 👥 Customers | 10,000 |
-| 🏪 Stores | 25 (5 regions) |
-| 🧾 Products | 226 SKUs |
-| ⭐ Reviews | 8,000 |
+| Metric           | Value                         |
+| ---------------- | ----------------------------- |
+| 📅 Date Range    | Jan 2022 – Dec 2024 (3 years) |
+| 💰 Total Revenue | $160.9M                       |
+| 📈 GP Margin     | 42.5%                         |
+| 🛒 Transactions  | 151,687                       |
+| 👥 Customers     | 10,000                        |
+| 🏪 Stores        | 25 (5 regions)                |
+| 🧾 Products      | 226 SKUs                      |
+| ⭐ Reviews       | 8,000                         |
 
 ### Tech Stack
 
@@ -116,79 +116,79 @@ retailpulse360/
 
 ### `transactions.csv` — 151,687 rows
 
-| Column | Type | Description |
-|--------|------|-------------|
-| `transaction_id` | string | Unique ID (T0000001…) |
-| `date` | date | 2022-01-01 to 2024-12-31 |
-| `store_id` | string | FK → stores.csv |
-| `customer_id` | string | FK → customers.csv |
-| `product_id` | string | FK → products.csv |
-| `quantity` | int | Units purchased |
-| `unit_price` | float | Shelf price |
-| `discount_amount` | float | Discount applied |
-| `final_unit_price` | float | Price after discount |
-| `total_revenue` | float | quantity × final_unit_price |
-| `total_cost` | float | quantity × unit_cost |
-| `gross_profit` | float | total_revenue − total_cost |
-| `payment_method` | string | Credit/Debit/Mobile Pay/Cash |
-| `channel` | string | In-Store / Online |
+| Column             | Type   | Description                  |
+| ------------------ | ------ | ---------------------------- |
+| `transaction_id`   | string | Unique ID (T0000001…)        |
+| `date`             | date   | 2022-01-01 to 2024-12-31     |
+| `store_id`         | string | FK → stores.csv              |
+| `customer_id`      | string | FK → customers.csv           |
+| `product_id`       | string | FK → products.csv            |
+| `quantity`         | int    | Units purchased              |
+| `unit_price`       | float  | Shelf price                  |
+| `discount_amount`  | float  | Discount applied             |
+| `final_unit_price` | float  | Price after discount         |
+| `total_revenue`    | float  | quantity × final_unit_price  |
+| `total_cost`       | float  | quantity × unit_cost         |
+| `gross_profit`     | float  | total_revenue − total_cost   |
+| `payment_method`   | string | Credit/Debit/Mobile Pay/Cash |
+| `channel`          | string | In-Store / Online            |
 
 ### `customers.csv` — 10,000 rows
 
-| Column | Type | Description |
-|--------|------|-------------|
-| `customer_id` | string | C00001 – C10000 |
-| `first_name` / `last_name` | string | Full name |
-| `email` | string | Contact email |
-| `age` | int | 18–75 |
-| `gender` | string | M / F / Other |
-| `city` | string | US city |
-| `registration_date` | date | Account created |
-| `loyalty_tier` | string | New / Bronze / Silver / Gold |
-| `email_opt_in` | bool | Marketing consent |
+| Column                     | Type   | Description                  |
+| -------------------------- | ------ | ---------------------------- |
+| `customer_id`              | string | C00001 – C10000              |
+| `first_name` / `last_name` | string | Full name                    |
+| `email`                    | string | Contact email                |
+| `age`                      | int    | 18–75                        |
+| `gender`                   | string | M / F / Other                |
+| `city`                     | string | US city                      |
+| `registration_date`        | date   | Account created              |
+| `loyalty_tier`             | string | New / Bronze / Silver / Gold |
+| `email_opt_in`             | bool   | Marketing consent            |
 
 ### `products.csv` — 226 rows
 
-| Column | Type | Description |
-|--------|------|-------------|
-| `product_id` | string | P0001 – P0226 |
-| `product_name` | string | Brand + subcategory + SKU# |
-| `category` | string | Electronics / Clothing / Groceries / Home & Kitchen / Sports |
-| `brand` | string | NovaBrand / TechEdge / AlphaLine etc. |
-| `unit_cost` | float | Supplier cost |
-| `unit_price` | float | Retail price |
-| `margin_pct` | float | Gross margin % |
+| Column         | Type   | Description                                                  |
+| -------------- | ------ | ------------------------------------------------------------ |
+| `product_id`   | string | P0001 – P0226                                                |
+| `product_name` | string | Brand + subcategory + SKU#                                   |
+| `category`     | string | Electronics / Clothing / Groceries / Home & Kitchen / Sports |
+| `brand`        | string | NovaBrand / TechEdge / AlphaLine etc.                        |
+| `unit_cost`    | float  | Supplier cost                                                |
+| `unit_price`   | float  | Retail price                                                 |
+| `margin_pct`   | float  | Gross margin %                                               |
 
 ### `stores.csv` — 25 rows
 
-| Column | Description |
-|--------|-------------|
-| `store_id` | S001 – S025 |
-| `region` | North / South / East / West / Central |
-| `store_type` | Flagship / Standard / Express |
-| `city` | US city |
-| `sqft` | Store size |
+| Column       | Description                           |
+| ------------ | ------------------------------------- |
+| `store_id`   | S001 – S025                           |
+| `region`     | North / South / East / West / Central |
+| `store_type` | Flagship / Standard / Express         |
+| `city`       | US city                               |
+| `sqft`       | Store size                            |
 
 ### `rfm_scores.csv` — ML Output
 
 > Generated by `02_analytics_pipeline.py` — do not edit manually
 
-| Column | Description |
-|--------|-------------|
-| `recency` | Days since last purchase |
-| `frequency` | Total transactions |
-| `monetary` | Total spend |
-| `R` / `F` / `M` | Quintile scores (1–5) |
-| `RFM` | Combined score |
-| `segment` | Champions / Loyal / Potential / At Risk / Hibernating |
+| Column          | Description                                           |
+| --------------- | ----------------------------------------------------- |
+| `recency`       | Days since last purchase                              |
+| `frequency`     | Total transactions                                    |
+| `monetary`      | Total spend                                           |
+| `R` / `F` / `M` | Quintile scores (1–5)                                 |
+| `RFM`           | Combined score                                        |
+| `segment`       | Champions / Loyal / Potential / At Risk / Hibernating |
 
 ### `churn_scores.csv` — ML Output
 
-| Column | Description |
-|--------|-------------|
-| `churn_probability` | Model score 0.0–1.0 |
-| `churn_risk_label` | Low / Medium / High Risk |
-| `segment` | RFM segment cross-reference |
+| Column              | Description                 |
+| ------------------- | --------------------------- |
+| `churn_probability` | Model score 0.0–1.0         |
+| `churn_risk_label`  | Low / Medium / High Risk    |
+| `segment`           | RFM segment cross-reference |
 
 ---
 
@@ -281,12 +281,12 @@ The core analytics script. Runs 7 analysis modules end-to-end.
 
 **Models used:**
 
-| Model | Library | Purpose | Result |
-|-------|---------|---------|--------|
-| Random Forest | sklearn | Churn prediction | AUC = 1.000 |
-| Ridge Regression | sklearn | Sales forecasting | $123,559/day avg |
-| Isolation Forest | sklearn | Anomaly detection | 55 anomalies |
-| RFM Quintile Scoring | pandas | Customer segmentation | 5 segments |
+| Model                | Library | Purpose               | Result           |
+| -------------------- | ------- | --------------------- | ---------------- |
+| Random Forest        | sklearn | Churn prediction      | AUC = 1.000      |
+| Ridge Regression     | sklearn | Sales forecasting     | $123,559/day avg |
+| Isolation Forest     | sklearn | Anomaly detection     | 55 anomalies     |
+| RFM Quintile Scoring | pandas  | Customer segmentation | 5 segments       |
 
 **Run time:** ~45 seconds  
 **Output:** 7 PNG charts + `rfm_scores.csv` + `churn_scores.csv`
@@ -297,14 +297,14 @@ The core analytics script. Runs 7 analysis modules end-to-end.
 
 Builds a professional 6-sheet Excel workbook using `openpyxl`.
 
-| Sheet | Contents |
-|-------|----------|
-| 📊 Executive Summary | KPI cards + regional breakdown table |
-| 📅 Monthly KPIs | 36-month trend + embedded line chart |
-| 📦 Product Performance | Top 50 products + pie chart |
-| 👥 Customer Intelligence | RFM segments + at-risk customer list |
-| 📋 Inventory Status | Reorder alerts with red/amber formatting |
-| 🗄️ SQL Query Library | Reference queries for analysts |
+| Sheet                    | Contents                                 |
+| ------------------------ | ---------------------------------------- |
+| 📊 Executive Summary     | KPI cards + regional breakdown table     |
+| 📅 Monthly KPIs          | 36-month trend + embedded line chart     |
+| 📦 Product Performance   | Top 50 products + pie chart              |
+| 👥 Customer Intelligence | RFM segments + at-risk customer list     |
+| 📋 Inventory Status      | Reorder alerts with red/amber formatting |
+| 🗄️ SQL Query Library     | Reference queries for analysts           |
 
 **Run time:** ~10 seconds  
 **Output:** `outputs/RetailPulse360_Management_Report.xlsx`
@@ -466,13 +466,13 @@ Results:
 
 ### RFM Segmentation Results
 
-| Segment | Count | % of Base | Avg Revenue |
-|---------|-------|-----------|-------------|
-| 🏆 Champions | 1,664 | 16.6% | $186 |
-| 💙 Loyal Customers | 2,843 | 28.4% | $168 |
-| 🌱 Potential Loyalists | 3,062 | 30.6% | $136 |
-| ⚠️ At Risk | 1,507 | 15.1% | $98 |
-| 💤 Hibernating | 924 | 9.2% | $72 |
+| Segment                | Count | % of Base | Avg Revenue |
+| ---------------------- | ----- | --------- | ----------- |
+| 🏆 Champions           | 1,664 | 16.6%     | $186        |
+| 💙 Loyal Customers     | 2,843 | 28.4%     | $168        |
+| 🌱 Potential Loyalists | 3,062 | 30.6%     | $136        |
+| ⚠️ At Risk             | 1,507 | 15.1%     | $98         |
+| 💤 Hibernating         | 924   | 9.2%      | $72         |
 
 ---
 
@@ -481,22 +481,26 @@ Results:
 > Generated from the actual ML pipeline run on 151,687 transactions
 
 ### 💰 Revenue
+
 - **$160.9M** total 3-year revenue at **42.5% GP margin**
 - Electronics leads revenue (**38%** share) but below-average margin (38.2%)
 - November–December = **22% of annual revenue** — peak season critical
 - Online channel: **18% of transactions** but **24% higher AOV** ($217 vs $175)
 
 ### 🏪 Regional Performance
+
 - **West region** underperforms: revenue per store **15% below network average**
 - **Central region** highest revenue despite fewest stores
 - **South region** lowest customer sentiment: **3.41★** vs 3.98★ North
 
 ### 👥 Customers
+
 - **1,664 Champions** generate ~31% of revenue (top 16.6%)
 - **1,985 high-risk churners** — $3.4M annual revenue at risk
 - Win-back campaign recommended within **7 days** for At Risk segment
 
 ### 📦 Inventory
+
 - **341 SKU-store combos** below reorder level
 - **142 fully out of stock** — Electronics worst affected
 - Los Angeles Smartphone stockout estimated **$84K lost revenue**
@@ -540,8 +544,8 @@ git config --global user.email "your@email.com"
 3. Fill in:
    - **Repository name:** `retailpulse360`
    - **Description:** `End-to-end retail analytics platform with ML pipeline, SQL, Excel & Power BI`
-   - **Visibility:** Public ✅ *(so employers can see it)*
-   - **DO NOT** tick "Add a README" *(we have our own)*
+   - **Visibility:** Public ✅ _(so employers can see it)_
+   - **DO NOT** tick "Add a README" _(we have our own)_
 4. Click **Create repository**
 5. **Copy the repository URL** shown — it looks like:
    `https://github.com/YOUR_USERNAME/retailpulse360.git`
@@ -599,6 +603,7 @@ Enter your **GitHub username** and **Personal Access Token** when prompted.
 > **⚠️ Note on `transactions.csv` (15MB)**
 > GitHub has a 25MB file limit. The transactions file is 15MB — it will upload fine.
 > If you ever regenerate it and it grows, add it to `.gitignore` and use Git LFS:
+>
 > ```bash
 > git lfs install
 > git lfs track "data/transactions.csv"
@@ -642,16 +647,16 @@ Open VS Code → press `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (Mac)
 
 Install these extensions:
 
-| Extension | Publisher | Why |
-|-----------|-----------|-----|
-| **Python** | Microsoft | Run .py files, IntelliSense |
-| **Pylance** | Microsoft | Type checking, autocomplete |
-| **Jupyter** | Microsoft | Notebook support |
-| **Rainbow CSV** | mechatroner | Colour-code CSV columns |
-| **Excel Viewer** | GrapeCity | Preview .xlsx in VS Code |
-| **GitLens** | GitKraken | Git blame, history |
-| **SQLTools** | mtxr | Run SQL queries inline |
-| **indent-rainbow** | oderwat | Visualise Python indents |
+| Extension          | Publisher   | Why                         |
+| ------------------ | ----------- | --------------------------- |
+| **Python**         | Microsoft   | Run .py files, IntelliSense |
+| **Pylance**        | Microsoft   | Type checking, autocomplete |
+| **Jupyter**        | Microsoft   | Notebook support            |
+| **Rainbow CSV**    | mechatroner | Colour-code CSV columns     |
+| **Excel Viewer**   | GrapeCity   | Preview .xlsx in VS Code    |
+| **GitLens**        | GitKraken   | Git blame, history          |
+| **SQLTools**       | mtxr        | Run SQL queries inline      |
+| **indent-rainbow** | oderwat     | Visualise Python indents    |
 
 ---
 
@@ -704,12 +709,14 @@ Create `.vscode/settings.json` in your project root:
 Open any `.py` file → click the ▶ **Run Python File** button (top right)
 
 **Option B — Terminal:**
+
 ```bash
 # Open integrated terminal: Ctrl+` (backtick)
 python scripts/02_analytics_pipeline.py
 ```
 
 **Option C — Debug mode:**
+
 1. Open `02_analytics_pipeline.py`
 2. Press `F5` → select **Python File**
 3. Set breakpoints by clicking the left margin
@@ -765,6 +772,6 @@ Dataset is 100% synthetic — no real customer data.
 
 **Built with ❤️ as a Data Analyst Capstone Project**
 
-*RetailPulse 360 · NovaMart Analytics Platform*
+_RetailPulse 360 · NovaMart Analytics Platform_
 
 </div>
